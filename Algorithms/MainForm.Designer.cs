@@ -31,6 +31,7 @@
             SortButton = new Button();
             SortSelectionComboBox = new ComboBox();
             SortingLogTextRichBox = new RichTextBox();
+            ResetButton = new Button();
             SuspendLayout();
             // 
             // SortButton
@@ -54,21 +55,32 @@
             // 
             // SortingLogTextRichBox
             // 
-            SortingLogTextRichBox.Location = new Point(604, 68);
+            SortingLogTextRichBox.Location = new Point(413, 68);
             SortingLogTextRichBox.Name = "SortingLogTextRichBox";
             SortingLogTextRichBox.Size = new Size(168, 381);
             SortingLogTextRichBox.TabIndex = 2;
             SortingLogTextRichBox.Text = "";
             // 
-            // Form1
+            // ResetButton
+            // 
+            ResetButton.Location = new Point(413, 22);
+            ResetButton.Name = "ResetButton";
+            ResetButton.Size = new Size(75, 23);
+            ResetButton.TabIndex = 3;
+            ResetButton.Text = "Reset";
+            ResetButton.UseVisualStyleBackColor = true;
+            ResetButton.Click += ResetButton_Click;
+            // 
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 461);
+            ClientSize = new Size(617, 461);
+            Controls.Add(ResetButton);
             Controls.Add(SortingLogTextRichBox);
             Controls.Add(SortSelectionComboBox);
             Controls.Add(SortButton);
-            Name = "Form1";
+            Name = "MainForm";
             Text = "Sorting Algorithm Visualizer";
             Paint += MainForm_Paint;
             ResumeLayout(false);
@@ -79,5 +91,6 @@
         private Button SortButton;
         private ComboBox SortSelectionComboBox;
         private RichTextBox SortingLogTextRichBox;
+        private Button ResetButton;
     }
 }
