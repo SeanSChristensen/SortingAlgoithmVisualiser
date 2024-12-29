@@ -1,4 +1,4 @@
-# SortingAlgoithmVisualiser
+# Sorting Algoithm Visualiser
 
 A simple C# Windows Forms application that visually shows data being sorted using various algorithms paired with instructions on each step and a UI
 
